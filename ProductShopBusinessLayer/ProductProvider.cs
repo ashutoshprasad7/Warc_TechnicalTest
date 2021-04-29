@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ProductShopBusinessLayer.Classes;
 using ProductShopDataLayer;
 using ProductShopDataObjects.Classes;
+using ProductShopDataObjects.Dtos;
 
 namespace ProductShopBusinessLayer
 {
@@ -28,6 +29,11 @@ namespace ProductShopBusinessLayer
             }
         }
 
+        public async Task<IEnumerable<IProduct>> GetAllProductsAsync()
+        {
+            return GetAllProducts();
+        }
+        
         public IProduct GetProductById(int? id)
         {
             using (ProductShopDataModel productsDb = new ProductShopDataModel())
@@ -52,6 +58,19 @@ namespace ProductShopBusinessLayer
             }
         }
 
+        public async Task<Result<IProduct>> GetProductByIdAsync(int? id)
+        {
+            try
+            {
+                IProduct product = GetProductById(id);
+                return new Result<IProduct>(true, product);
+            }
+            catch (Exception ex) 
+            {
+                return new Result<IProduct>(false, null, new[] { ex.Message });
+            }
+        }
+
         public void SaveProduct(IProduct product)
         {
             using (ProductShopDataModel productsDb = new ProductShopDataModel())
@@ -69,6 +88,19 @@ namespace ProductShopBusinessLayer
                 dataProduct.Description = product.Description;
 
                 productsDb.SaveChanges();
+            }
+        }
+
+        public async Task<Result> SaveProductAsync(IProduct product)
+        {
+            try
+            {
+                SaveProduct(product);
+                return new Result(true);
+            }
+            catch (Exception ex)
+            {
+                return new Result(false, new[] { ex.Message });
             }
         }
     }

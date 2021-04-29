@@ -54,6 +54,7 @@
     <Compile Include="Classes\IProduct.cs" />
     <Compile Include="Classes\IProductProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
