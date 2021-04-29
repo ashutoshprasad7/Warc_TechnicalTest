@@ -10,7 +10,7 @@ namespace ProductShopDataObjects.Classes
     {
         List<IProduct> GetAllProducts();
 
-        IProduct GetProductById(int id);
+        IProduct GetProductById(int? id);
 
         void SaveProduct(IProduct product);
     }

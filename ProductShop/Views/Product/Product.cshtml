@@ -7,7 +7,8 @@
     <div class="col-md-8">
         <h2>@Model.Product.Title</h2>
         <img class="product-image" src="@Model.Product.ImagePath" alt="@Model.Product.Title" />
-        <div class="price" >
+        <p>@Model.Product.Description</p>
+        <div class="price">
             <span class="price-tag">Price: </span>@Model.Product.Price
         </div>
         <p><a class="btn btn-default" href="/edit/product/@Model.Product.Id">Edit</a></p>

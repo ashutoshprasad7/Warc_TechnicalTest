@@ -12,13 +12,14 @@
 <div class="row">
     @foreach (var product in Model.Products)
     {
-        <div class="col-md-4">
-            <h2>@product.Title</h2>
-            <img class="product-image" src="@product.ImagePath" alt="@product.Title" />
-            <div class="price" >
-                <span class="price-tag">Price: </span>@product.Price
-            </div>
-            <p><a class="btn btn-default" href="/product/@product.Id">View</a></p>
+    <div class="col-md-4">
+        <h2>@product.Title</h2>
+        <img class="product-image" src="@product.ImagePath" alt="@product.Title" />
+        <p>@product.Description</p>
+        <div class="price">
+            <span class="price-tag">Price: </span>@product.Price
         </div>
+        <p><a class="btn btn-default" href="/product/@product.Id">View</a></p>
+    </div>
     }
 </div>

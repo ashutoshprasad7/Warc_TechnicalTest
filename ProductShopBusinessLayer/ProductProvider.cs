@@ -20,6 +20,7 @@ namespace ProductShopBusinessLayer
                     Id = p.Id,
                     Price = p.Price,
                     Title = p.Title,
+                    Description = p.Description,
                     ImagePath = p.ImagePath
                 }).ToList());
 
@@ -27,8 +28,7 @@ namespace ProductShopBusinessLayer
             }
         }
 
-
-        public IProduct GetProductById(int id)
+        public IProduct GetProductById(int? id)
         {
             using (ProductShopDataModel productsDb = new ProductShopDataModel())
             {
@@ -44,6 +44,7 @@ namespace ProductShopBusinessLayer
                     Id = dataProduct.Id,
                     Price = dataProduct.Price,
                     Title = dataProduct.Title,
+                    Description = dataProduct.Description,
                     ImagePath = dataProduct.ImagePath
                 };
 
@@ -65,6 +66,7 @@ namespace ProductShopBusinessLayer
                 dataProduct.ImagePath = product.ImagePath;
                 dataProduct.Price = product.Price;
                 dataProduct.Title = product.Title;
+                dataProduct.Description = product.Description;
 
                 productsDb.SaveChanges();
             }

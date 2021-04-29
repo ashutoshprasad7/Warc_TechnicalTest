@@ -25,6 +25,14 @@
     </div>
     <div class="row form-group">
         <div class="col-md-4">
+            @Html.LabelFor(m => m.Description)
+        </div>
+        <div class="col-md-8">
+            @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-md-4">
             @Html.LabelFor(m => m.ImagePath)
         </div>
         <div class="col-md-8">

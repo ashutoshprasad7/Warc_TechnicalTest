@@ -31,6 +31,7 @@ namespace ProductShop.Controllers
                 Price = product.Price,
                 Id = product.Id,
                 Title = product.Title,
+                Description = product.Description,
                 ImagePath = product.ImagePath
             };
 
@@ -46,6 +47,7 @@ namespace ProductShop.Controllers
                 Id = model.Id,
                 Price = model.Price,
                 Title = model.Title,
+                Description = model.Description,
                 ImagePath = model.ImagePath
             };
 

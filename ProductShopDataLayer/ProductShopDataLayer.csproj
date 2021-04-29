@@ -56,6 +56,10 @@
     <Compile Include="Migrations\202101221326028_Initial migration.designer.cs">
       <DependentUpon>202101221326028_Initial migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104290730566_ProductAddDescription.cs" />
+    <Compile Include="Migrations\202104290730566_ProductAddDescription.designer.cs">
+      <DependentUpon>202104290730566_ProductAddDescription.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProductShopDataModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +71,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202101221326028_Initial migration.resx">
       <DependentUpon>202101221326028_Initial migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104290730566_ProductAddDescription.resx">
+      <DependentUpon>202104290730566_ProductAddDescription.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

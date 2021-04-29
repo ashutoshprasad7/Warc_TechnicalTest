@@ -23,7 +23,7 @@ namespace ProductShop.Controllers
         }
 
         [Route("product/{id}")]
-        public ActionResult Product(int id)
+        public ActionResult Product(int? id)
         {
             ProductViewModel model = new ProductViewModel
             {

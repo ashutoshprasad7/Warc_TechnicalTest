@@ -28,6 +28,7 @@
                     Id = 1,
                     Price = 2.35M,
                     Title = "Wood",
+                    Description = "Strong wood",
                     ImagePath = "/images/joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg"
                 },
                 new Product()
@@ -35,6 +36,7 @@
                     Id = 2,
                     Price = 8.13M,
                     Title = "Piano",
+                    Description = "Amazing piano",
                     ImagePath = "/images/markus-gjengaar-v3l8kTbPhzA-unsplash.jpg"
                 },
                 new Product()
@@ -42,6 +44,7 @@
                     Id = 3,
                     Price = 21.34M,
                     Title = "Bubble",
+                    Description = "Burst the bubble",
                     ImagePath = "/images/kai-dahms-IBo9Ehrzcfs-unsplash.jpg"
                 }
             });
