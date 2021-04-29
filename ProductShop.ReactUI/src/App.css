@@ -1,0 +1,37 @@
+body {
+    background-color:#333;
+    color: #fff;
+    margin: 5px;;
+    padding: 0px;
+    font-family: 'Verdana';
+    font-size: normal;
+    width:100%;
+    height:100%;   
+  }
+
+  h1 {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: rgba(41, 146, 8, 0.94);
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #95ada2;
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: #efe7e7;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: #8dff50;
+  }
+
+  a:visited {
+    color: #dc310c;
+  }
